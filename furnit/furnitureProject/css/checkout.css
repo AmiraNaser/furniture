@@ -1,0 +1,54 @@
+.sec2 .checkbig
+{
+    display: flex;
+    justify-content: space-between;
+}
+.sec2 .checkbig form
+{
+    width: 69%;
+    border:1px solid #DDD;
+    padding: 20px;
+}
+.sec2 .checkbig form .flname
+{
+    display: flex;
+    justify-content: space-between;
+}
+.sec2 .checkbig form .flname div
+{
+    width: 49%;
+}
+
+.sec2 .checkbig form input
+{
+    width: 100%;
+    padding:10px ;
+    border: 1px solid #DDD;
+    margin-bottom: 20px;
+}
+
+
+
+.sec2 .checkbig aside
+{
+    width: 29%;
+    background-color: rgb(238, 236, 236,.3);
+    padding: 10px;
+    height: 250px;
+  }
+  .sec2 .checkbig aside .sec2-head
+  {
+    background-color: rgb(66, 62, 62);
+    padding: 10px;
+    color: #FFF;
+    margin-bottom: 20px;
+  }
+
+  .sec2 .checkbig aside div:nth-of-type(2),
+  .sec2 .checkbig aside div:nth-of-type(3),
+  .sec2 .checkbig aside div:nth-of-type(4)
+  {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }

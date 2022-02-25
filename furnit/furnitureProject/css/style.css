@@ -1,0 +1,371 @@
+/* Extra small devices (portrait phones, less than 576px)
+No media query since this is the default if you use "mobile first" */
+/* Small devices (landscape phones, 576px and up) */
+body
+{
+  box-sizing: border-box;
+}
+
+header
+{
+  background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+  url('../images/main-bcg.jpeg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  padding-top: 25px;
+  color: #fff;
+  position: relative;
+
+}
+header nav
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .drop-list>i
+{
+  background-color: #BA5D2C;
+  font-size: 30px;
+  padding: 7px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+header nav .drop-list .listt
+{
+  position: absolute;
+  top: 0;
+  left: -100%;
+  background-color: #F1F5F8;
+  height: 100%;
+  width: 100%;
+  padding-top: 100px;
+  transition: all .7s;
+  z-index: 200;
+}
+header nav .drop-list .listt ul
+{
+  list-style: none;
+}
+header nav .drop-list .listt ul li
+{
+  margin-bottom: 20px;
+}
+header nav .drop-list .listt ul li a
+{
+  color: #102A42;
+  font-size: 30px;
+  text-decoration: none;
+}
+header nav .drop-list .listt i
+{
+  color: #617D98;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 30px;
+  cursor: pointer;
+}
+header nav .drop-list .ulLarge
+{
+  display: none;
+}
+header nav .logo
+{
+    font-family: 'Courgette', cursive;
+    font-size: 40px
+}
+header nav .nav-card i
+{
+  font-size: 30px;
+  position: relative;
+  cursor: pointer;
+}
+header nav .nav-card i span
+{
+  position: absolute;
+  top: -22px;
+  right: -8px;
+  display: block;
+  background-color: #BA5D2C;
+  padding: 5px 10px;
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+header article
+{
+  margin-top: 15vh;
+}
+header article h1
+{
+    font-family: 'Courgette', cursive;
+    font-size: 60px
+}
+header article p
+{
+  font-size: 25px;
+  margin-top: 20px;
+}
+header article button
+{
+  background-color: transparent;
+  padding: 10px 20px;
+  outline: none;
+  border: 1px solid #fff;
+  color: #fff;
+  margin-top: 30px;
+  transition: all .5s
+}
+header article button:hover
+{
+  background-color: #fff;
+  color: #BA5D2C
+}
+
+/*********************cARD sAIDE*****************************/
+
+.card-aside
+{
+  position: fixed;
+  top: 0;
+  right: -100%;
+  background-color:#F1F5F8;
+  height: 100%;
+  width: 100%;
+  transition: all .7s;
+  z-index: 10;
+}
+.card-aside>i
+{
+  font-size: 30px;
+  color: #617D98;
+  cursor: pointer;
+  padding: 20px;
+}
+.card-aside>h2
+{
+  text-align: center;
+  font-family: 'Courgette', cursive;
+}
+
+.card-aside .card-aside-last
+{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+.card-aside .card-aside-last p
+{
+  font-family: 'Courgette', cursive;
+  font-size: 25px;
+  text-align: center;
+}
+.card-aside .card-aside-last button
+{
+
+    background-color: #BA5D2C;
+    padding: 6px 50px;
+    outline: none;
+    border: 1px solid #fff;
+    color: #fff;
+    transition: all .5s;
+    border-radius: 10px
+
+}
+.card-aside .card-aside-last button:hover
+{
+  background-color: #fff;
+  color: #BA5D2C;
+  border: 1px solid #BA5D2C;
+
+}
+
+/****************************************************/
+
+.sec2
+{
+  margin-top: 50px;
+  text-align: center;
+  padding-bottom: 50px
+}
+.sec2>div>h1
+{
+  font-size: 35px;
+  color: #102A42;
+  margin-bottom: 30px
+}
+.sec2 .feat-figs figure
+{
+  margin-bottom: 30px
+}
+.sec2 .feat-figs figure img
+{
+  width: 100%;
+  border-radius: 10px
+}
+.sec2 .feat-figs figure h6
+{
+  color: #617D98;
+  text-transform: capitalize;
+  margin-top: 10px
+}
+.sec2 .feat-figs figure p
+{
+  color: #102A42;
+  font-weight: 600
+}
+.sec2 .feat-figs .fig-img
+{
+  position: relative;
+
+}
+.sec2 .feat-figs figure .fig-inside
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.fig-inside-show
+{
+  display: none;
+}
+.sec2 .feat-figs figure .fig-img .fig-inside i
+{
+  background-color: #BA5D2C;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  color: #fff;
+  margin-right: 10px;
+}
+.sec2 .feat-figs figure .fig-img .fig-inside i:hover
+{
+  cursor: pointer;
+}
+
+.sec2 button
+{
+  background-color: #BA5D2C;
+  outline: none;
+  border: none;
+  padding: 3px 25px;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  transition: all .5s;
+  border: 2px solid #BA5D2C;
+}
+.sec2 button a
+{
+  color: #fff;
+  text-decoration: none;
+}
+.sec2 button:hover
+{
+  background-color: #fff;
+  border: 2px solid #BA5D2C;
+  color: #BA5D2C;
+}
+.sec2 button:hover a
+{
+  color: #BA5D2C;
+}
+
+
+
+
+
+
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+@media (min-width: 576px) {
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+  #iconList
+  {
+    display: none;
+  }
+
+  header nav .drop-list .listt
+  {
+    display: none;
+  }
+
+  header nav .drop-list .ulLarge
+  {
+    list-style: none;
+    display: block;
+    padding-left: 0
+  }
+  header nav .drop-list .ulLarge li
+  {
+    display: inline-block;
+  }
+  header nav .drop-list .ulLarge li:not(header nav .drop-list .ulLarge li:last-child)
+  {
+    margin-right: 20px;
+  }
+  header nav .drop-list .ulLarge a
+  {
+    color: #fff;
+    font-size: 21px;
+    text-decoration: none;
+    letter-spacing: 2px
+  }
+  header nav .drop-list .ulLarge a:hover
+  {
+    color: #BA5D2C;
+  }
+  .sec2 .feat-figs
+  {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .card-aside
+  {
+    width: 400px
+  }
+
+
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+  header article h1
+  {
+      font-size: 80px
+  }
+  header article p
+  {
+    font-size: 35px;
+  }
+  .sec2 .feat-figs
+  {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .sec2 .feat-figs figure
+  {
+    width: 32%;
+  }
+  .sec2 .feat-figs figure .fig-img img
+  {
+    height: 200px;
+  }
+
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
