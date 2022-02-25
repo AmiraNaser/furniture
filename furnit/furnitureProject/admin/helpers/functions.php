@@ -104,7 +104,17 @@ function validate($input,$flag){
                   if(!filter_var($input,FILTER_VALIDATE_FLOAT)){
                       $status = false;
                   }    
-                break;  
+                break; 
+            case 11: 
+                $filter_options = array( 
+                    'options' => array( 'min_range' => 0) 
+                );
+                
+                
+                if( !filter_var( $i, FILTER_VALIDATE_INT, $filter_options )) {
+                    $status = false;
+                }
+                break;     
 
 
     // 01 0    01 1 01 2 01 5        // 11 

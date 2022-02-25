@@ -6,7 +6,7 @@ require '../helpers/checkLogin.php';
 require '../helpers/checkAdmin.php';
 
 $user_id = $_GET['id'];
-$sql = "select orders.*, product.id as productID, product.title, product.price, product.image  from orders join product on orders.product_id = product.id where order_status='Pending' and user_id='$user_id'";
+$sql = "select orders.*, product.id as productID, product.title, product.price, product.image  from orders join product on orders.product_id = product.id where order_status='Ordered' and user_id='$user_id'";
 $op = mysqli_query($con,$sql);
 
 $Osql = "select sum(total) as sumTotal from orders where user_id = $user_id and order_status='Pending'";

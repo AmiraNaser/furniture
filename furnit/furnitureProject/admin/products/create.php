@@ -35,7 +35,7 @@ $subCat_op  = mysqli_query($con,$sql);
         #validate price
     if(!Validate($price,1)){
         $errors['Price'] = " Price Required"; 
-    } elseif (!Validate($price, 10)) {
+    } elseif (!Validate($price, 11)) {
         $errors['Price'] = " Invalid Price";
     }
     // if (!Validate($discount_id)) {
